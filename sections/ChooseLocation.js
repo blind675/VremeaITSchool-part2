@@ -5,7 +5,7 @@ const oradea = document.querySelector(".oradea");
 function updateCity(city) {
   // upadatam orasul afisat
   const currentCity = document.getElementById("current-city");
-  currentCity.innerHTML = city;
+  currentCity.innerHTML = city + ".";
 
   // afisam noile date de la API
   displayCurrentWeather(city);
