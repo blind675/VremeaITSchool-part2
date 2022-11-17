@@ -1,4 +1,10 @@
-displayCurrentWeather("București");
+let currentCity = localStorage.getItem("city");
 
+if (!currentCity) {
+  currentCity = "București";
+  localStorage.setItem("city", "București");
+}
 
-// line noua 
+updateCityDisplay(currentCity);
+
+displayCurrentWeather(currentCity);
