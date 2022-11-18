@@ -9,3 +9,7 @@ function getCurrentWeatherEndpoint(city) {
   // units=metric => Unitatea de masura va fi grade celsius.
   return `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=ro&appid=${APPID}`;
 }
+
+function getForecastEndpoint(city) {
+  return `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&lang=ro&appid=${APPID}`;
+}
